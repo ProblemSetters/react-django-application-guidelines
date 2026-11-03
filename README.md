@@ -4,28 +4,16 @@ Build a full-stack application for a problem domain of your choice using React +
 
 The application will be built in this repository, following the guidelines given. Start by reading the files in the order below.
 
-## Required before submission
+## Mandatory checks before submission
 
-> [!IMPORTANT]
-> **All provided project checks must pass before you submit.**
-
-1. Copy `project-checks/` from the [reference repository](https://github.com/ProblemSetters/coderepo-react-django-calendar/tree/main/project-checks) into your project root.
-2. Install the check tools once, from your project root:
-
-```bash
-npm install --prefix project-checks --package-lock=false
-python3 -m venv project-checks/.venv
-project-checks/.venv/bin/python -m pip install -r project-checks/requirements.txt
-```
-
-3. With MongoDB running and your application stopped, run:
+**Your submission must pass all provided project checks.** Run the checks included in the starter repository before submitting your code.
 
 ```bash
 PATH="$PWD/project-checks/.venv/bin:$PWD/project-checks/node_modules/.bin:$PATH" \
 PROJECT_ROOT="$PWD" project-checks/.venv/bin/python -m pytest project-checks/project_checks_test.py -v -s
 ```
 
-Fix every failure and rerun the checks after your final changes.
+If any check fails, fix the reported issue and run the checks again. **Rerun them after your final code changes and submit only when there are no failures.** Do not modify or disable the provided checks to make them pass.
 
 ## Read in this order
 
