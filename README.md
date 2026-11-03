@@ -4,6 +4,17 @@ Build a full-stack application for a problem domain of your choice using React +
 
 The application will be built in this repository, following the guidelines given. Start by reading the files in the order below.
 
+## Mandatory checks before submission
+
+**Your submission must pass all provided project checks.** Run the checks included in the starter repository before submitting your code.
+
+```bash
+PATH="$PWD/project-checks/.venv/bin:$PWD/project-checks/node_modules/.bin:$PATH" \
+PROJECT_ROOT="$PWD" project-checks/.venv/bin/python -m pytest project-checks/project_checks_test.py -v -s
+```
+
+If any check fails, fix the reported issue and run the checks again. **Rerun them after your final code changes and submit only when there are no failures.** Do not modify or disable the provided checks to make them pass.
+
 ## Read in this order
 
 1. **[REQUIREMENTS.md](REQUIREMENTS.md)** defines the product brief, capability patterns, acceptance criteria, and submission checklist.
